@@ -78,7 +78,9 @@
         if (!ext_loadSafeCategory(methodContainer_, targetClass_)) {\
             ext_safeCategoryFailed(CLASS, CATEGORY); \
         } \
-    }
+    } \
+    @end \
+    @implementation CLASS ## _ ## CATEGORY ## _MethodContainer (CATEGORY)
 
 /*** implementation details follow ***/
 BOOL ext_loadSafeCategory (Class methodContainer, Class targetClass);
